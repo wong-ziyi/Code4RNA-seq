@@ -19,11 +19,11 @@ Copy *01.make_grcm38_tran.sh* into that directory, navigate into that directory,
 mv 01.make_grcm38_tran.sh ./Hisat_Genome_Index_With_ss_exon
 cd ./Hisat_Genome_Index_With_ss_exon
 ```
-and run this bash file
+and run this bash file (**option#1**)
 ```bash
 $ ./01.make_grcm38_tran.sh
 ```
-or download the pre-build Hisat2 index then un-zip it
+or download the pre-build Hisat2 index then un-zip it (**option#2**)
 ```bash
 $ wget -P ./ "https://cloud.biohpc.swmed.edu/index.php/s/grcm38_tran/download"
 $ tar -xvzf grch37.tar.gz ./
