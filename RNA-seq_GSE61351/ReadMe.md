@@ -16,8 +16,8 @@ $ mkdir ./Hisat_Genome_Index_With_ss_exon
 ```
 Copy *01.make_grcm38_tran.sh* into that directory, navigate into that directory, 
 ```bash
-mv 01.make_grcm38_tran.sh ./Hisat_Genome_Index_With_ss_exon
-cd ./Hisat_Genome_Index_With_ss_exon
+$ mv 01.make_grcm38_tran.sh ./Hisat_Genome_Index_With_ss_exon
+$ cd ./Hisat_Genome_Index_With_ss_exon
 ```
 and run this bash file (**option#1**)
 ```bash
