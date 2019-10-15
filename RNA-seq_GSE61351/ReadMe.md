@@ -70,6 +70,6 @@ $ ./02.Hisat2_AligingReads.sh
 <h1 id="03">03.Assemble transcriptome</h1> 
 
 ```bash
-$ ./03.stringtie_AssembleMergeTransciptome.sh -n SW3_D04091828_merged.gtf
+$ ./03.stringtie_AssembleMergeTransciptome.sh -n SW3_D04091828_Tx
 ```
 [[back to content]](#content-index)
