@@ -1,8 +1,8 @@
 # Content Index
 - [Introducation](#introducation)
 - [00.Download raw fastq files](#00)
- - [00-01.Create a directory to store this example and then navigate into that directory](#00-01)
- - [00-02.Run ***00.Download raw fastq files*** with specific parameters to download the raw fastq files](#00-02)
+  - [00-01.Create a directory to store this example and then navigate into that directory](#00-01)
+  - [00-02.Run ***00.Download raw fastq files*** with specific parameters to download the raw fastq files](#00-02)
 - [01.Build or download the Hisat2 index](#01)
 - [02.Hisat2 alinging reads](#02)
 
