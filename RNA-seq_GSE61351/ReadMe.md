@@ -67,3 +67,9 @@ $ conda activate py3
 $ ./02.Hisat2_AligingReads.sh
 ```
 [[back to content]](#content-index)
+<h1 id="03">03.Assemble transcriptome</h1> 
+
+```bash
+$ ./03.stringtie_AssembleMergeTransciptome.sh -n SW3_D04091828_merged.gtf
+```
+[[back to content]](#content-index)
