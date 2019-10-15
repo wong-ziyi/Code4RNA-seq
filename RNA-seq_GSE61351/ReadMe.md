@@ -1,3 +1,5 @@
+# Introducation
+Here is an example for study and practice the processing and analysis of RNA-seq data. In this section, we will build up our own transcriptome anotation based on the data from GSE61351 by assembly their .bam file. Then we will do quantitation for them on transcription resolution by Salmon software, and identifing significant transcripts switching, alternative splicing, differentiate expressed genes or transcripts, and finally do functional enrichment analysis by [clusterProfiler](https://yulab-smu.github.io/clusterProfiler-book/) R software. 
 # 00.Download raw fastq files
 ## 00-01.Create a directory to store this example and then navigate into that directory
 ```bash
