@@ -10,14 +10,14 @@
 $ mkdir ./RNA-seq_GSE61351
 $ cd ./RNA-seq_GSE61351
 ```
-## 00-02.Run *00.RawFASTqDownload.sh* with specific parameters to download the raw fastq files
+## 00-02.Run ***00.RawFASTqDownload.sh*** with specific parameters to download the raw fastq files
 ```bash
 $ ./00.RawFASTqDownload.sh -v vol1 -r SRR157 -i 367 -t 0 -e 5
 ```
 # 01.Build or download the Hisat2 index
 
 <p align="justify">
-If you have a computer with 200GB physical memory, you could change the line 14 "ENSEMBL_RELEASE=84" in <i><u>make_grcm38_tran.sh</u></i> into the newest release version (e.g. "ENSEMBL_RELEASE=98"), then excute it to build a Hisat2 index with ss (splice site) and exon infromation based on the newest ensembl genome anotation. Otherwise, you could download the pre-build Hisat2 index in 2016 with ensembl genome anoation release 84 from <a href="https://cloud.biohpc.swmed.edu/index.php/s/grch37_tran/download">here</a> (See all available pre-build index in <a href="https://ccb.jhu.edu/software/hisat2/index.shtml">here</a>).
+If you have a computer with 200GB physical memory, you could change the line 14 "ENSEMBL_RELEASE=84" in <b><i>make_grcm38_tran.sh</i></b> into the newest release version (e.g. "ENSEMBL_RELEASE=98"), then excute it to build a Hisat2 index with ss (splice site) and exon infromation based on the newest ensembl genome anotation. Otherwise, you could download the pre-build Hisat2 index in 2016 with ensembl genome anoation release 84 from <a href="https://cloud.biohpc.swmed.edu/index.php/s/grch37_tran/download">here</a> (See all available pre-build index in <a href="https://ccb.jhu.edu/software/hisat2/index.shtml">here</a>).
 </p>
 
 Create a directory to store the index
