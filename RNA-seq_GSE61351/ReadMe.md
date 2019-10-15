@@ -19,13 +19,13 @@
 $ mkdir ./RNA-seq_GSE61351
 $ cd ./RNA-seq_GSE61351
 ```
-<h1 id="00-02">
+<h2 id="00-02">
  00-02.Run 
   <a href="https://github.com/wong-ziyi/Code4RNA-seq/blob/master/RNA-seq_GSE61351/00.RawFASTqDownload.sh">
     <i>00.Download raw fastq files</i>
   </a>
  with specific parameters to download the raw fastq files
-</h1>
+</h2>
 
 ```bash
 $ ./00.RawFASTqDownload.sh -v vol1 -r SRR157 -i 367 -t 0 -e 5
