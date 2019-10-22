@@ -34,3 +34,17 @@ vignettes/*.pdf
 
 # Shiny token, see https://shiny.rstudio.com/articles/shinyapps.html
 rsconnect/
+
+# Any index, .bam, .sam, .gtf, .fa, .fastq, and quantitation files
+*/Hisat_Genome_Index_With_ss_exon
+*/TranscriptIndex_ENSEMBL_Salmon_Decoy_Assemble
+*/TranscriptIndex_ENSEMBL_Salmon_Index_Assemble
+*/AssembledGTF
+*/Results_QuantitativeAbundance
+*.bam
+*.sam
+*.gtf
+*.fa
+*.fa.fai
+*.bam.*
+*.sam.*
