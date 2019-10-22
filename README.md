@@ -7,5 +7,5 @@ $ sudo apt-get install git
 ```
 ### Clone this Git repository into a specific folder
 ```bash
-$ sudo git clone wong-ziyi@github.com:/Code4RNA-seq /mnt/g/Code4RNA-seq
+$ sudo git clone https://github.com/wong-ziyi/Code4RNA-seq /mnt/g/Code4RNA-seq
 ```
