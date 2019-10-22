@@ -48,3 +48,4 @@ rsconnect/
 *.fa.fai
 *.bam.*
 *.sam.*
+*.GTFls.txt
