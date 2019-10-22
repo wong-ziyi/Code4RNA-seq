@@ -39,8 +39,8 @@ rsconnect/
 */Hisat_Genome_Index_With_ss_exon
 */TranscriptIndex_ENSEMBL_Salmon_Decoy_Assemble
 */TranscriptIndex_ENSEMBL_Salmon_Index_Assemble
-*/00.AssembledGTF
-*/01.Results_QuantitativeAbundance
+*/01.AssembledGTF
+*/02.Results_QuantitativeAbundance
 *.bam
 *.sam
 *.gtf
