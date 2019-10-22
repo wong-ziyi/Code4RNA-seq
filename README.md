@@ -17,6 +17,14 @@ $ sudo git pull
 ```
 ### Push a local commit
 ```bash
+$ touch test.txt
+$ git add test.txt
 $ git commit -m "test"
+$ git push
+```
+### Delete a file
+```bash
+$ git rm test.txt
+$ git commit -m "test2"
 $ git push
 ```
