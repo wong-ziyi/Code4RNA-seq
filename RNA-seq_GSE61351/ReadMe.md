@@ -74,11 +74,11 @@ $ ./02.Hisat2_AligingReads.sh
 ```bash
 $ ./03.stringtie_AssembleMergeTransciptome.sh -n SW3_D04091828_Tx
 ```
- -n Prefix for the output merged .gtf file 
+ -n Prefix for the output merged .gtf file  
 [[back to content]](#content-index)
 <h1 id="04">04.Preparing transcriptome indices for Salmon software</h1> 
 <p align="justify">
-Here, I followed the recommendations in the documents of Salmon that "We generally recommend that you build a <i>decoy-aware</i> transcriptome file and do quantification using selective alignment".
+Here, I followed the recommendations in the <a href="https://salmon.readthedocs.io/en/latest/salmon.html#preparing-transcriptome-indices-mapping-based-mode">documents</a> of Salmon that "We generally recommend that you build a <i>decoy-aware</i> transcriptome file and do quantification using selective alignment".
 </p>
 
 ```bash
