@@ -74,7 +74,7 @@ $ ./02.Hisat2_AligingReads.sh
 ```bash
 $ ./03.stringtie_AssembleMergeTransciptome.sh -n SW3_D04091828_Tx
 ```
- -n Prefix for the output merged .gtf file  
+ -n here define a prefix for the output merged .gtf file  
 [[back to content]](#content-index)
 <h1 id="04">04.Preparing transcriptome indices for Salmon software</h1> 
 <p align="justify">
@@ -83,6 +83,7 @@ Here, I followed the recommendations in the <a href="https://salmon.readthedocs.
 
 ```bash
 $ conda activate salmon
-$ ./04.Salmon_BuildIndex_gffread_RetrieveFa.sh
+$ ./04.Salmon_BuildIndex_gffread_RetrieveFa.sh -n SW3_D04091828_Tx
 ```
+ -n here define a prefix for the output transcriptome .fa file 
 [[back to content]](#content-index)
