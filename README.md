@@ -9,3 +9,7 @@ $ sudo apt-get install git
 ```bash
 $ sudo git clone https://github.com/wong-ziyi/Code4RNA-seq /mnt/g/Code4RNA-seq
 ```
+### Update your local repository
+```bash
+$ sudo git pull
+```
