@@ -39,7 +39,7 @@ $ ./00.RawFASTqDownload.sh -v vol1 -r SRR157 -i 367 -t 0 -e 5
 <h1 id="01">01.Build or download the Hisat2 index</h1> 
 
 <p align="justify">
-If you have a computer with <b>200GB</b> physical memory, you could change the line 14 "ENSEMBL_RELEASE=84" in <a href="https://github.com/wong-ziyi/Code4RNA-seq/blob/master/RNA-seq_GSE61351/01.make_grcm38_tran.sh"><b><i>01.make_grcm38_tran.sh</i></b></a> into the newest release version (e.g. "ENSEMBL_RELEASE=98"), then excute it to build a Hisat2 index with ss (splice site) and exon infromation based on the newest ensembl genome anotation. Otherwise, you could download the pre-build Hisat2 index in 2016 with ensembl genome anoation release 84 from <a href="https://cloud.biohpc.swmed.edu/index.php/s/grch37_tran/download">here</a> (See all available pre-build index in <a href="https://ccb.jhu.edu/software/hisat2/index.shtml">here</a>).
+  <U>If you have a computer with <b>200GB</b> physical memory</U>, you could change the line 14 "ENSEMBL_RELEASE=84" in <a href="https://github.com/wong-ziyi/Code4RNA-seq/blob/master/RNA-seq_GSE61351/01.make_grcm38_tran.sh"><b><i>01.make_grcm38_tran.sh</i></b></a> into the newest release version (e.g. "ENSEMBL_RELEASE=98"), then excute it to build a Hisat2 index with ss (splice site) and exon infromation based on the newest ensembl genome anotation. Otherwise, you could download the pre-build Hisat2 index in 2016 with ensembl genome anoation release 84 from <a href="https://cloud.biohpc.swmed.edu/index.php/s/grch37_tran/download">here</a> (See all available pre-build index in <a href="https://ccb.jhu.edu/software/hisat2/index.shtml">here</a>).
 </p>
 
 Create a directory to store the index
