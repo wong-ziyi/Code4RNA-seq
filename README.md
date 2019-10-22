@@ -28,3 +28,4 @@ $ git rm test.txt
 $ git commit -m "test2"
 $ git push
 ```
+### Please see more detials on [here](https://dont-be-afraid-to-commit.readthedocs.io/en/latest/git/commandlinegit.html)
