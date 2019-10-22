@@ -15,7 +15,7 @@ do
   elif [[ $name == *"d9"* ]]; then
   name=${name//d9/d09}
   fi
-  echo "We will map sample ${i} with ${core} CPU cores (${name}): ${name1} and ${name2}";
+  echo "We will map sample $((${i}/2+1)) with ${core} CPU cores (${name}): ${name1} and ${name2}";
 done
 
 y="s";
