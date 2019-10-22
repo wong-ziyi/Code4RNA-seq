@@ -39,11 +39,11 @@ if [[ $y == ["yY"] ]]; then
 	  fi
 	  echo "Mapping sample $((${i}/2+1)) with ${core} CPU cores (${name}): ${name1} and ${name2}";
 	  #Hisat2: Aliging reads
-	  hisat2 -p ${core} -x ./Hisat_Genome_Index_With_ss_exon/genome_tran -1 ${name1} -2 ${name2} -S ${name}.sam
+	  hisat2 -p ${core} -x ./Hisat_Genome_Index_With_ss_exon/genome_tran -1 ${name1} -2 ${name2} -S ./01.BAMfile/${name}.sam
 	  #Samtools sorting and converting sam to bam file
-	  samtools sort -@ ${core} -o ${name}.bam ${name}.sam
+	  samtools sort -@ ${core} -o ./01.BAMfile/${name}.bam ./01.BAMfile/${name}.sam
 	  #delete old unsorted sam file
-	  rm ${name}.sam
+	  rm ./01.BAMfile/${name}.sam
 	done
 elif [[ $y == ["nN"] ]]; then
 echo -e "\nExited";

@@ -44,8 +44,8 @@ do
   name=${name#"./"*}
   name=${name%".bam"*}
   echo "Assemble transcriptome from sample ${name}";
-  stringtie -p ${core} -G ./genome.gtf -o ${name}.gtf -l ${name} ${name}.bam
-  echo ${name}.gtf >> GTFls.txt; 
+  stringtie -p ${core} -G ./genome.gtf -o ./02.AssembledGTF/${name}.gtf -l ${name} ./01.BAMfile/${name}.bam
+  echo ./02.AssembledGTF/${name}.gtf >> GTFls.txt; 
 done
 echo "Mergeing assembled transcriptome from ${number} samples";
 stringtie --merge -G ./genome.gtf -o ${Out_name}.gtf GTFls.txt
