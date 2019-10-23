@@ -50,3 +50,5 @@ rsconnect/
 *.bam.*
 *.sam.*
 *.GTFls.txt
+*.fastq
+*.fq
