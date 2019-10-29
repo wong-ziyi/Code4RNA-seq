@@ -1,4 +1,12 @@
 #!/bin/bash
+while getopts n: option
+do
+case "${option}"
+in
+n)   Out_name=${OPTARG};;
+esac
+done
+
 echo "Retrieve transcriptome fa file based on merged assembled transcriptome gtf file";
 gffread -w ${Out_name}.fa -g ./genome.fa ${Out_name}.gtf
 echo "Making decoy file for Salmon software";

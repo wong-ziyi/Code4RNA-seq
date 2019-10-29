@@ -27,7 +27,7 @@ get() {
 	fi
 }
 
-if [! -f ./genome.gtf] ; then
+if [ ! -f ./genome.gtf ] ; then
 	get ${ENSEMBL_GRCm38_GTF_BASE}/${GTF_FILE}.gz || (echo "Error getting ${GTF_FILE}" && exit 1)
 	sudo gunzip ${GTF_FILE}.gz || (echo "Error unzipping ${GTF_FILE}" && exit 1)
 	mv ${GTF_FILE} genome.gtf
@@ -37,18 +37,23 @@ level=3
 number=$(find . -maxdepth ${level} -type f -name "*.bam"| wc -l)
 core=$(grep -c ^processor /proc/cpuinfo)
 echo "This folder has ${number} bam files";
+
+if [ -f ./02.AssembledGTF/GTFls.txt ] ; then
+	rm ./02.AssembledGTF/GTFls.txt
+fi
+
 for i in $(seq 1 ${number})
 do
   seq1="NR==${i}";
   name=$(find . -maxdepth ${level} -type f -name "*.bam" | awk ${seq1})
-  name=${name#"./"*}
+  name=${name#"./01.BAMfile/"*}
   name=${name%".bam"*}
   echo "Assemble transcriptome from sample ${name}";
   stringtie -p ${core} -G ./genome.gtf -o ./02.AssembledGTF/${name}.gtf -l ${name} ./01.BAMfile/${name}.bam
-  echo ./02.AssembledGTF/${name}.gtf >> GTFls.txt; 
+  echo ./02.AssembledGTF/${name}.gtf >> ./02.AssembledGTF/GTFls.txt; 
 done
 echo "Mergeing assembled transcriptome from ${number} samples";
-stringtie --merge -G ./genome.gtf -o ${Out_name}.gtf GTFls.txt
+stringtie --merge -G ./genome.gtf -o ${Out_name}.gtf ./02.AssembledGTF/GTFls.txt
 
 F=Mus_musculus.GRCm38.dna.toplevel.fa
 if [ ! -f ./genome.fa ] ; then
