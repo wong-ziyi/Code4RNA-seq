@@ -1,0 +1,1 @@
+SW3_d4_1_S45Aligned.sortedByCoord.out.chr.bam,SW3_d4_2_S46Aligned.sortedByCoord.out.chr.bam,SW3_d4_3_S47Aligned.sortedByCoord.out.chr.bam
