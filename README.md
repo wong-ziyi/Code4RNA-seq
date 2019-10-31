@@ -1,6 +1,8 @@
 # Code4RNA-seq
-Code book for RNA-seq analysis (From FASTQ to Statistical Results)  
-Check [here](https://github.com/wong-ziyi/Code4RNA-seq/blob/master/00.InitialSetUp4WSLonWindows.md) to set up a Windows PC.
+Code book for RNA-seq analysis (From FASTQ to Statistical Results ---- example codes for learning). 
+
+First of first, please check [here](https://github.com/wong-ziyi/Code4RNA-seq/blob/master/00.InitialSetUp4WSLonWindows.md) to set up a Windows PC and get familiar with command line in Linux terminal.
+
 ## Use git on Ubuntu terminal
 ### Installation
 ```bash
